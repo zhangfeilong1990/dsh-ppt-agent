@@ -47,17 +47,63 @@ blocks:
   freeform:
     description: 只给起始坐标与最大边界，内部按图形逻辑自排
     use_for: [时间线, 流程图, 矩阵, 组织架构]
-  max_blocks_per_page: 4
+  max_blocks_per_page: 3
+
+motifs:
+  content-技术效果对照:
+    blocks: "左右 5:5：左技术/做法，右效果/结果"
+    use_for: 一页讲清做了什么、带来什么
+  content-单结论+板块:
+    blocks: "顶部总结框 + 下方单栏或两栏板块"
+    use_for: 正文只有一页时
+  content-多板块:
+    blocks: "上下或左右多个板块组合，板块内可再分条"
+    use_for: 正文分多个并列板块
+  appendix-列表:
+    blocks: "引导线标题 + 全幅编号列表"
+    use_for: 附件展开某板块细节
+  appendix-图片占位:
+    blocks: "引导线标题 + 全幅虚线占位框"
+    use_for: 效果图、示意图待补
+  appendix-双栏+表格:
+    blocks: "引导线标题 + 左右 5:5 + 底部全幅表格"
+    use_for: 车型/方案对比
 
 slot_names:
   - title
   - summary_box
+  - summary_sentence
+  - section_summary
   - h1
   - h2
   - body
   - chart_zone
+  - image_placeholder
+  - table_zone
   - source_line
   - note
+  - insight
+
+page_number:
+  align_with_title: true
+  note: 页码行中心与标题行中心同高，水平位置仍在右上角
+
+summary_styles:
+  none: 不显示总结
+  sentence: 只显示一句总结句
+  box: 显示总结框，规格待定，默认高 22mm、字号 16pt
+  spec_status: 规格待定
+
+insight_styles:
+  none: 不显示
+  line: 正文最下面一行 Insight 句
+  box: 独立浅灰底框
+  spec_status: 规格待定
+
+section_summary_policy:
+  none: 板块不写总结
+  selected: 只给重点板块写
+  all: 每个板块都写
 
 special_pages:
   insight:

@@ -46,6 +46,8 @@ page_number:
   format: "{current}/{total}"
   show_on: [content, appendix]
   hide_on: [cover, toc, chapter]
+  align_with_title: true
+  note: 页码行中心与正文标题行中心同高；小报告无封面目录，从 1/N 开始
 
 logo:
   position: cover_bottom_right
