@@ -1,28 +1,68 @@
-page:
-  size: "A4_Landscape"  # 297mm x 210mm
-  margin: { top: 20, bottom: 20, left: 20, right: 20 }
+# 视觉基因 v1.0
+# 由 ppt-visual 读取；所有字体、字号、颜色、线型必须取自本文件或 elements-v1.0.yaml。
 
-typography:
-  font_family: "Microsoft YaHei" # 微软雅黑
+page:
+  size: A4_Landscape
+  dimensions_mm: [297, 210]
+  margin_mm: { top: 20, bottom: 20, left: 20, right: 20 }
+  content_area_mm: { width: 257, height: 170 }
+
+fonts:
+  family: Microsoft YaHei
+  fallback: [微软雅黑, Microsoft YaHei, sans-serif]
+  weights:
+    regular: Regular
+    bold: Bold
   color_default: "#000000"
-  sizes_pt:
-    cover_title: 32
-    toc_title: 28
-    page_title: 24
-    summary_box: 16
-    h1: 13   # 加粗
-    h2: 11   # 加粗
-    body: 10
-    chart_label: 9
-    caption: 9
-    note: 8  # 灰色
-    page_number_main: 12
-    page_number_sub: 10
+
+font_sizes_pt:
+  cover_title: 32
+  toc_title: 28
+  page_title: 24
+  summary: 16
+  h1: 13
+  h2: 11
+  body: 10
+  chart_label: 9
+  caption: 9
+  note: 8
+  page_number_main: 12
+  page_number_sub: 10
 
 colors:
   text: "#000000"
   note: "#AEAEAE"
-  
-footer:
-  page_number: { position: "top_right", format: "{current}/{total}" }
-  logo: { position: "cover_bottom_right", max_height_in: 0.3 }
+  accent: "#1F4E79"
+  accent_light: "#5B9BD5"
+  table_head_bg: "#F2F2F2"
+  chart_grid: "#E0E0E0"
+
+header_footer:
+  header: none
+  footer: none
+
+page_number:
+  position: top_right
+  format: "{current}/{total}"
+  show_on: [content, appendix]
+  hide_on: [cover, toc, chapter]
+
+logo:
+  position: cover_bottom_right
+  max_height_in: 0.3
+  cover_only: true
+
+emphasis:
+  max_per_page: 2
+  allowed: [bold, underline, accent_color, light_box, left_bar]
+
+tables:
+  border_style: horizontal_only
+  header_bold: true
+  header_bg: "#F2F2F2"
+
+charts:
+  grid: horizontal_only
+  grid_color: "#E0E0E0"
+  title_in_chart: false
+  legend_max: 4

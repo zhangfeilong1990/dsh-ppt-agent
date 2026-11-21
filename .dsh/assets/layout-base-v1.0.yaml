@@ -1,10 +1,71 @@
+# 版面底座 v1.0
+# 由 ppt-layout 读取；定义页面结构、标题变体、区块模型与大/小报告规则。
+
+page:
+  size: A4_Landscape
+  content_area_mm: { width: 257, height: 170 }
+  margin_mm: 20
+
+scales:
+  large:
+    structure: [cover, toc, body, insight_optional, appendix_optional]
+    description: 大报告，正文超过 2 页或需要目录导航
+  small:
+    structure: [body, appendix_optional]
+    description: 小报告，正文 1-2 页，不加封面目录
+  upgrade_rule: 正文要点超过 2 页承载量时，small 自动升级为 large
+
 page_structure:
-  header_line: { segments: [180, 15, 62], style: "solid_gray" } # 顶部断线
+  header_line:
+    element: L-01
+    segments_mm: [180, 15, 62]
+    style: solid_gray
   title_variants:
-    - variant_A: "text_with_disconnected_line"
-    - variant_B: { type: "full_width_box", height_mm: 22, text_size: 16, color: "theme" } # 总结框
-    - variant_C: "none"
-  zones: "flexible_blocks" # 不强制网格，支持全幅、分列、主从、自由排布
-  
+    variant_A:
+      type: text_with_disconnected_line
+      position: top_left
+      line_element: L-01
+    variant_B:
+      type: full_width_box
+      height_mm: 22
+      text_size_pt: 16
+      color: theme
+      available_on: any_page
+    variant_C:
+      type: none
+  title_rule: 每页最多一个标题槽；variant_A 与 variant_B 不同时出现
+
+blocks:
+  full:
+    description: 横跨内容区，用于顶部总结框、底部备注、全宽图表
+  columns:
+    description: 按比例横向切分
+    common_ratios: ["6:4", "5:5", "7:3"]
+    note: 左右两区最常见，但不强制矩形网格
+  main_side:
+    description: 一个大区块加一个窄辅助区
+  freeform:
+    description: 只给起始坐标与最大边界，内部按图形逻辑自排
+    use_for: [时间线, 流程图, 矩阵, 组织架构]
+  max_blocks_per_page: 4
+
+slot_names:
+  - title
+  - summary_box
+  - h1
+  - h2
+  - body
+  - chart_zone
+  - source_line
+  - note
+
 special_pages:
-  - insight_page: { position: "after_main", style: "same_as_body", required_prefix: "Insight" }
+  insight:
+    position: after_body_before_appendix
+    toc_entry: separate_chapter
+    style: same_as_body
+    required_prefix: Insight
+    content_form: 编号或卡片，不写大段散文
+  appendix:
+    optional: true
+    use_for: [数据明细, 术语表, 参考文献]
