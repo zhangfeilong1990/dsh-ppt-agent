@@ -1,0 +1,28 @@
+page:
+  size: "A4_Landscape"  # 297mm x 210mm
+  margin: { top: 20, bottom: 20, left: 20, right: 20 }
+
+typography:
+  font_family: "Microsoft YaHei" # 微软雅黑
+  color_default: "#000000"
+  sizes_pt:
+    cover_title: 32
+    toc_title: 28
+    page_title: 24
+    summary_box: 16
+    h1: 13   # 加粗
+    h2: 11   # 加粗
+    body: 10
+    chart_label: 9
+    caption: 9
+    note: 8  # 灰色
+    page_number_main: 12
+    page_number_sub: 10
+
+colors:
+  text: "#000000"
+  note: "#AEAEAE"
+  
+footer:
+  page_number: { position: "top_right", format: "{current}/{total}" }
+  logo: { position: "cover_bottom_right", max_height_in: 0.3 }

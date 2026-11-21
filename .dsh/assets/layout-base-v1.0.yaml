@@ -1,0 +1,10 @@
+page_structure:
+  header_line: { segments: [180, 15, 62], style: "solid_gray" } # 顶部断线
+  title_variants:
+    - variant_A: "text_with_disconnected_line"
+    - variant_B: { type: "full_width_box", height_mm: 22, text_size: 16, color: "theme" } # 总结框
+    - variant_C: "none"
+  zones: "flexible_blocks" # 不强制网格，支持全幅、分列、主从、自由排布
+  
+special_pages:
+  - insight_page: { position: "after_main", style: "same_as_body", required_prefix: "Insight" }

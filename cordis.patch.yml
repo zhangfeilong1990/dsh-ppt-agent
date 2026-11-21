@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-ppt-agent
+      src: ./lib/index.js

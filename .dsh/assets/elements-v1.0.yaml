@@ -1,0 +1,24 @@
+lines:
+  L-01: { appearance: "disconnected_solid", use_cases: ["global_header"] }
+  L-02: { appearance: "thin_light_gray", use_cases: ["block_divider", "table_row"] }
+  L-03: { appearance: "thick_solid", use_cases: ["text_emphasis", "h1_underline"] }
+  L-04: { appearance: "thick_vertical", use_cases: ["h1_guide", "quote_line"] }
+  L-05: { appearance: "dashed_gray", use_cases: ["soft_divider"] }
+
+shapes:
+  S-01: { appearance: "full_width_solid_dark", use_cases: ["top_summary", "h1_block"] }
+  S-02: { appearance: "full_width_solid_light", use_cases: ["soft_summary"] }
+  S-03: { appearance: "light_gray_no_border", use_cases: ["callout_box", "case_study"] }
+  S-04: { appearance: "bordered_rect", use_cases: ["kpi_card", "chart_container"] }
+  S-05: { appearance: "rounded_rect", use_cases: ["flow_node", "tag"] }
+
+text_effects:
+  T-01: { appearance: "bold", use_cases: ["inline_emphasis"] }
+  T-02: { appearance: "theme_color", use_cases: ["key_number"] }
+  T-03: { appearance: "underline", use_cases: ["critical_conclusion"] }
+  T-04: { appearance: "highlight_bg", use_cases: ["long_text_emphasis"] }
+
+marks:
+  I-01: { appearance: "dot", use_cases: ["unordered_list"] }
+  I-03: { appearance: "number", use_cases: ["ordered_list", "insight_points"] }
+  I-04: { appearance: "check_cross", use_cases: ["pros_cons"] }
