@@ -1,0 +1,150 @@
+[
+  {
+    "id": "mckinsey-strategy",
+    "name": "麦肯锡战略诊断与破局报告",
+    "theme": "consulting",
+    "taste": "mckinsey-partner",
+    "chrome": "consulting-classic",
+    "pages": "10 页：architectural 封面 → exec-summary → spotlight KPI → agenda → Marimekko → 魔力象限 → agenda → 哑铃跃迁 → 甘特图 → cta-cards"
+  },
+  {
+    "id": "sequoia-pitch",
+    "name": "红杉 / YC 创投融资路演 BP",
+    "theme": "venture-daylight",
+    "taste": "apple-keynote-light",
+    "chrome": "keynote-spatial",
+    "pages": "10 页：keynote-glow 封面 → 金句宣言 → 痛点对比 → browser 原型 → spotlight KPI → TAM 同心圆 → 魔力象限 → 桑基盈利流 → 团队图谱 → cta-cards"
+  },
+  {
+    "id": "stripe-product-launch",
+    "name": "Stripe / Apple 科技产品与开发者发布",
+    "theme": "stripe-craft",
+    "taste": "linear-craft",
+    "chrome": "saas-bento",
+    "pages": "10 页：grid 光晕封面 → 无框大数字 → bento-hero → browser 原型 → mobile 原型 → 语法高亮代码 → 6 维雷达图 → 哑铃提速 → 甘特图 → cta-cards"
+  },
+  {
+    "id": "quarterly-exec-review",
+    "name": "季度经营复盘与董事会汇报",
+    "theme": "financial-ft",
+    "taste": "ft-data-journal",
+    "chrome": "editorial-folio",
+    "pages": "9 页：editorial-grid 封面 → spotlight KPI → 区域热力图 → 瀑布利润桥 → 桑基资金流 → 价值链箭头 → 痛点对策 → 甘特图 → cta-cards"
+  },
+  {
+    "id": "tech-arch-rfc",
+    "name": "核心技术架构评审与系统重构 RFC",
+    "theme": "stripe-craft",
+    "taste": "linear-craft",
+    "chrome": "saas-bento",
+    "pages": "9 页：grid 光晕封面 → 新旧对比 → 分层拓扑 → Mermaid 流程图 → Mermaid 时序图 → 语法高亮代码 → 6 维权衡雷达 → 灰度甘特 → 准出清单"
+  },
+  {
+    "id": "academic-defense",
+    "name": "Nature / 顶会学术答辩与实验报告",
+    "theme": "academic",
+    "taste": "nature-academic",
+    "chrome": "academic-minimal",
+    "pages": "9 页：editorial-grid 封面 → 动机与贡献 → 原生公式定理框 → 方法流程图 → booktabs 三线表 → 消融哑铃图 → 泛化热力图 → 边界对比 → 总结致谢"
+  },
+  {
+    "id": "enterprise-proposal",
+    "name": "政企大客户解决方案与竞标提案",
+    "theme": "bcg-emerald",
+    "taste": "mckinsey-partner",
+    "chrome": "consulting-classic",
+    "pages": "9 页：architectural 封面 → 价值摘要 → 痛点对策 → 私有化部署架构 → 哈维球盲测 → ROI 指标 → 12 周甘特 → SLA 团队 → POC 行动卡"
+  },
+  {
+    "id": "gov-institutional",
+    "name": "现代东方政务述职与年度工作报告",
+    "theme": "exec-jilan",
+    "taste": "oriental-zen",
+    "chrome": "gov-ceremonial",
+    "pages": "8 页：inverted 封面 → spotlight KPI → 重点成果卡片 → 区域热力图 → 阶段推进时间轴 → 问题与整改 → 下阶段部署甘特 → 结语"
+  },
+  {
+    "id": "mckinsey-evolution",
+    "name": "麦肯锡阶梯演进与宏观趋势诊断",
+    "dna": "#FFFFFF 底 + #062337 深墨蓝 + #C0504D 批注红 · editorial-rule",
+    "source": "likaku/Mck-ppt-design-skill",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "luxury-budget-review",
+    "name": "黑金高管财务预算与资金复盘",
+    "dna": "#080A0E 曜石黑 + #C9A84C 香槟金 + #5A9E48 翡翠绿 · glass",
+    "source": "iOfficeAI/OfficeCLI",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "swiss-bauhaus-workshop",
+    "name": "瑞士包豪斯设计评审与创新工作坊",
+    "dna": "#E63322 包豪斯红 + #E6B319 明黄 · editorial-folio",
+    "source": "iOfficeAI/OfficeCLI",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "dark-stage-investor",
+    "name": "暗夜舞台 Demo Day 高张力融资路演",
+    "dna": "#0A0A12 深空蓝黑 + #E94560 珊瑚红 + #3B82F6 电光蓝 · glass",
+    "source": "iOfficeAI/OfficeCLI",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "blueprint-ai-factory",
+    "name": "工程蓝图网格 AI 基础设施与智能体平台",
+    "dna": "#090E13 工程深蓝 + #4A90D9 蓝图青 + #E97E35 警示橙 · grid",
+    "source": "iOfficeAI/OfficeCLI",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "warm-brand-story",
+    "name": "暖宣纸撞色品牌焕新与市场增长提案",
+    "dna": "#F6F2EA 暖宣纸 + #101B3B 藏青 + #EC7442 珊瑚橘 · editorial-rule",
+    "source": "iOfficeAI/OfficeCLI",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "ted-storytelling-keynote",
+    "name": "暗夜极简主题演讲与观点叙事",
+    "dna": "#090C13 剧场黑 + #2BE4A8 薄荷青 + #E9A936 琥珀金 · glass",
+    "source": "iOfficeAI/OfficeCLI",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "msft-enterprise-discovery",
+    "name": "微软企业级 AI 场景发现与价值评估工作坊",
+    "dna": "#FFFFFF 白底 + #1376C0 Azure 蓝 + #0E7490 · 哈维球 + 四象限",
+    "source": "microsoft/dstoolkit-DiscoveryEnvisioning",
+    "license": "MIT"
+  },
+  {
+    "id": "daylight-earnings-research",
+    "name": "浅色投行研报与上市公司财报",
+    "dna": "#FAF9F6 暖米纸 + #1D6E6B 机构深青 + #9B4E23 铜褐 · editorial-rule",
+    "source": "hustcer/pptx-nova (clear-value)",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "okr-performance-review",
+    "name": "中文大厂述职与 OKR 季度复盘",
+    "dna": "#FFFFFF 极净白 + #1277BA 航标蓝 + #137B43 达标绿 · 目标实际表",
+    "source": "hustcer/pptx-nova (sky-compass)",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "quiet-canvas-keynote",
+    "name": "极简静谧画布与浅色设计发布会",
+    "dna": "#EBE8E2 暖宣麻 + #AA6E53 陶土红 + #587F8A 灰石蓝 · 54% 高留白",
+    "source": "hustcer/pptx-nova (D1-Quiet-Canvas)",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "medical-clinical-course",
+    "name": "医学临床汇报与循证科研课件",
+    "dna": "#F1F0EC 暖临床石 + #0B6A48 医学深绿 + #EA613E 珊瑚标 · 队列三线表",
+    "source": "grotyx/medical-ppt-design & hustcer/pptx-nova",
+    "license": "CC-BY-4.0 / Apache-2.0"
+  }
+]
